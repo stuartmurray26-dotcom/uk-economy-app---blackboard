@@ -5,7 +5,7 @@ A Flask web application exploring Bank of England base rate changes and UK annua
 ## Live deployment
 user: stuartmurray26@gmail.com
 password: Dunbeath1944!
-> Render URL: `https://uk-economy-explorer.onrender.com` *(update after deploying)*
+> Render URL: `https://uk-erconomy-app-1.onrender.com` 
 
 ---
 
