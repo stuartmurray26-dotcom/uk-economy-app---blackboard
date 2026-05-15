@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: uk-economy-explorer
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: 'gunicorn "app:create_app()"'
+    postDeployCommand: "python manage.py migrate"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: postgresql://economydb_d10a_user:jVpJokZzp307gVgbaWsMdqodUQQtmGZ9@dpg-d83jddgg4nts73dgoudg-a.oregon-postgres.render.com/economydb_d10a
